@@ -4,7 +4,7 @@
         <title>
         Globe Bank
         </title>
-        <meta charset=""utf8">
+        <meta charset="utf8">
     </head>
     <body>
         <h1>

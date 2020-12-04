@@ -1,3 +1,7 @@
+<?php if(!isset($page_title)){
+    $page_title = "Staff Area";
+} ?>
+
 <!doctype html>
 <html>
 <head>
@@ -6,16 +10,18 @@
     </title>
     <meta charset=""utf8">
     <!--  browser path-->
-    <link rel="stylesheet" href="../stylesheets/staff.css">
+    <link rel="stylesheet" href="<?php echo url_for("/stylesheets/staff.css")?>"
 </head>
 <body>
 <header>
-    <h1>GBI Staff Area</h1>
+    <h1>GBI - <?php echo $page_title ?></h1>
 </header>
 <navigation>
     <ul>
         <li>
-            <a href="index.php">Menu </a>
+            <!-- http://localhost/globe_bank/public/staff/index.php-->
+            <!-- The WWW_ROOT is just, http://localhost/globe_bank/public-->
+            <a href="<?php echo url_for("/staff/index.php")?>" >Menu </a>
         </li>
     </ul>
 </navigation>
