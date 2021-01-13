@@ -5,12 +5,19 @@
 $page_title = "Staff Menu"; ?>
 <?php include( SHARED_PATH . '/staff_header.php') ?>
     <div id="content">
-        <h1> Main Menu</h1>
-        <ul>
-            <li>
-                <!-- this is a relative path-->
-                <a href="subjects/index.php"> Subjects</a>
-            </li>
-        </ul>
+        <div id="main-menu">
+            <h1> Main Menu</h1>
+            <ul>
+                <li>
+                    <!-- this is a relative path-->
+                    <a href="<?php echo url_for("/staff/subjects/index.php")?>">Subjects</a>
+                </li>
+                <li>
+                    <!-- this is a relative path-->
+                    <a href="<?php echo url_for("/staff/pages/index.php")?>">Pages</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 <?php include( SHARED_PATH . '/staff_footer.php') ?>
